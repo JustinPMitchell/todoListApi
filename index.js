@@ -18,7 +18,3 @@ routes(app); //register the route
 app.listen(port);
 
 console.log('todo list RESTful API server started on ' + port);
-
-mongoose.connect('mongodb://127.0.0.1:27017');
-mongoose.connection.on('connected', () => console.log('Connected'));
-mongoose.connection.on('error', () => console.log('Connection failed with - ',err));
